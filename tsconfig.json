@@ -1,0 +1,30 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es6",
+    "module": "commonjs",
+    "lib": [
+      "es6",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "allowJs": true,
+    "outDir": "lib",
+    "rootDir": "./src",
+    "strict": true,
+    "moduleResolution": "node",
+    "types": ["node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}

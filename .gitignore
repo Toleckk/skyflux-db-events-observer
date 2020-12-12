@@ -1,0 +1,16 @@
+# WebStorm
+.idea
+
+# production
+lib
+
+# testing
+/coverage
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# environment variables
+.env

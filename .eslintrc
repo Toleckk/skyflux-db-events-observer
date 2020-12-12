@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "ignorePatterns": [
+    "**/*.js"
+  ],
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "eol-last": "error",
+    "import/no-internal-modules": "error",
+    "import/no-useless-path-segments": "error",
+    "import/no-duplicates": "error",
+    "import/newline-after-import": "error",
+    "import/no-default-export": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "sibling",
+          "internal",
+          "parent",
+          "index",
+          "object"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": 0
+  },
+  "settings": {
+    "import/internal-regex": "^@skyflux/deo"
+  },
+  "plugins": [
+    "import",
+    "prettier",
+    "@typescript-eslint"
+  ]
+}
